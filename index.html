@@ -312,10 +312,10 @@ function build(){
     if(r.id === "home"){
       p.innerHTML =
         '<div class="card"><div class="progress-wrap"><b id="homeCount">0</b><span>of ' + SITES.length + ' windows seen</span></div><div class="bar"><span id="homeBar"></span></div><div class="nearest" id="nearest"></div></div>' +
+        '<div class="region-grid" id="regionGrid" style="margin-bottom:16px"></div>' +
         '<div class="card map-card" id="homeMapCard"><svg id="map-home" viewBox="0 0 350 660" xmlns="http://www.w3.org/2000/svg"></svg>' +
         '<div class="legend"><span><span class="swatch v"></span>Seen</span><span><span class="swatch u"></span>Still to see</span><span style="margin-left:auto">Tap a region to open it</span></div></div>' +
-        '<div class="region-grid" id="regionGrid"></div>' +
-        '<div class="card" style="margin-top:16px"><div class="list-head"><h2>Further afield</h2><small>not on the maps</small></div><ul class="list" id="list-abroad"></ul></div>';
+        '<div class="card"><div class="list-head"><h2>Further afield</h2><small>not on the maps</small></div><ul class="list" id="list-abroad"></ul></div>';
     } else {
       p.innerHTML =
         '<div class="region-body">' +
